@@ -48,9 +48,8 @@ function addLailaToArray(instructors: string[]): string[] {
  * e.g.
  * eliminateTeam(["Brazil", "Germany", "Italy"]); // => "Italy"
  */
-function eliminateTeam(teams: string[]): string {
-  teams.pop();
-  return teams;
+function eliminateTeam(teams: string[]): string | undefined {
+  return teams.pop();
 }
 
 export { isArrayLengthOdd, isArrayLengthEven, addLailaToArray, eliminateTeam };
